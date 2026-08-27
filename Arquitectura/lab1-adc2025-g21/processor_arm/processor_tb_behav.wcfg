@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="processor_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="processor_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,796.232 ns"></ZoomStartTime>
+      <ZoomEndTime time="4,968.842 ns"></ZoomEndTime>
+      <Cursor1Time time="2,385.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="273"></NameColumnWidth>
+      <ValueColumnWidth column_width="665"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject type="array" fp_name="/processor_tb/o_led">
+      <obj_property name="ElementShortName">o_led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_led[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/i_sw">
+      <obj_property name="ElementShortName">i_sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/processor_tb/i_mclk">
+      <obj_property name="ElementShortName">i_mclk</obj_property>
+      <obj_property name="ObjectShortName">i_mclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/processor_tb/i_reset">
+      <obj_property name="ElementShortName">i_reset</obj_property>
+      <obj_property name="ObjectShortName">i_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/processor_tb/dump">
+      <obj_property name="ElementShortName">dump</obj_property>
+      <obj_property name="ObjectShortName">dump</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/IM_address">
+      <obj_property name="ElementShortName">IM_address[63:0]</obj_property>
+      <obj_property name="ObjectShortName">IM_address[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/DECODE/instr_D">
+      <obj_property name="ElementShortName">instr_D[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_D[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/signImm_D">
+      <obj_property name="ElementShortName">signImm_D[63:0]</obj_property>
+      <obj_property name="ObjectShortName">signImm_D[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/ID_EX/q">
+      <obj_property name="ElementShortName">q[270:0]</obj_property>
+      <obj_property name="ObjectShortName">q[270:0]</obj_property>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[270]">
+         <obj_property name="ElementShortName">[270]</obj_property>
+         <obj_property name="ObjectShortName">[270]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[269]">
+         <obj_property name="ElementShortName">[269]</obj_property>
+         <obj_property name="ObjectShortName">[269]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[268]">
+         <obj_property name="ElementShortName">[268]</obj_property>
+         <obj_property name="ObjectShortName">[268]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[267]">
+         <obj_property name="ElementShortName">[267]</obj_property>
+         <obj_property name="ObjectShortName">[267]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[266]">
+         <obj_property name="ElementShortName">[266]</obj_property>
+         <obj_property name="ObjectShortName">[266]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[265]">
+         <obj_property name="ElementShortName">[265]</obj_property>
+         <obj_property name="ObjectShortName">[265]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[264]">
+         <obj_property name="ElementShortName">[264]</obj_property>
+         <obj_property name="ObjectShortName">[264]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[263]">
+         <obj_property name="ElementShortName">[263]</obj_property>
+         <obj_property name="ObjectShortName">[263]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[262]">
+         <obj_property name="ElementShortName">[262]</obj_property>
+         <obj_property name="ObjectShortName">[262]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[261]">
+         <obj_property name="ElementShortName">[261]</obj_property>
+         <obj_property name="ObjectShortName">[261]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[260]">
+         <obj_property name="ElementShortName">[260]</obj_property>
+         <obj_property name="ObjectShortName">[260]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[259]">
+         <obj_property name="ElementShortName">[259]</obj_property>
+         <obj_property name="ObjectShortName">[259]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[258]">
+         <obj_property name="ElementShortName">[258]</obj_property>
+         <obj_property name="ObjectShortName">[258]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[257]">
+         <obj_property name="ElementShortName">[257]</obj_property>
+         <obj_property name="ObjectShortName">[257]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[256]">
+         <obj_property name="ElementShortName">[256]</obj_property>
+         <obj_property name="ObjectShortName">[256]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[255]">
+         <obj_property name="ElementShortName">[255]</obj_property>
+         <obj_property name="ObjectShortName">[255]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[254]">
+         <obj_property name="ElementShortName">[254]</obj_property>
+         <obj_property name="ObjectShortName">[254]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[253]">
+         <obj_property name="ElementShortName">[253]</obj_property>
+         <obj_property name="ObjectShortName">[253]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[252]">
+         <obj_property name="ElementShortName">[252]</obj_property>
+         <obj_property name="ObjectShortName">[252]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[251]">
+         <obj_property name="ElementShortName">[251]</obj_property>
+         <obj_property name="ObjectShortName">[251]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[250]">
+         <obj_property name="ElementShortName">[250]</obj_property>
+         <obj_property name="ObjectShortName">[250]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[249]">
+         <obj_property name="ElementShortName">[249]</obj_property>
+         <obj_property name="ObjectShortName">[249]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[248]">
+         <obj_property name="ElementShortName">[248]</obj_property>
+         <obj_property name="ObjectShortName">[248]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[247]">
+         <obj_property name="ElementShortName">[247]</obj_property>
+         <obj_property name="ObjectShortName">[247]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[246]">
+         <obj_property name="ElementShortName">[246]</obj_property>
+         <obj_property name="ObjectShortName">[246]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[245]">
+         <obj_property name="ElementShortName">[245]</obj_property>
+         <obj_property name="ObjectShortName">[245]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[244]">
+         <obj_property name="ElementShortName">[244]</obj_property>
+         <obj_property name="ObjectShortName">[244]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[243]">
+         <obj_property name="ElementShortName">[243]</obj_property>
+         <obj_property name="ObjectShortName">[243]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[242]">
+         <obj_property name="ElementShortName">[242]</obj_property>
+         <obj_property name="ObjectShortName">[242]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[241]">
+         <obj_property name="ElementShortName">[241]</obj_property>
+         <obj_property name="ObjectShortName">[241]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[240]">
+         <obj_property name="ElementShortName">[240]</obj_property>
+         <obj_property name="ObjectShortName">[240]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[239]">
+         <obj_property name="ElementShortName">[239]</obj_property>
+         <obj_property name="ObjectShortName">[239]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[238]">
+         <obj_property name="ElementShortName">[238]</obj_property>
+         <obj_property name="ObjectShortName">[238]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[237]">
+         <obj_property name="ElementShortName">[237]</obj_property>
+         <obj_property name="ObjectShortName">[237]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[236]">
+         <obj_property name="ElementShortName">[236]</obj_property>
+         <obj_property name="ObjectShortName">[236]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[235]">
+         <obj_property name="ElementShortName">[235]</obj_property>
+         <obj_property name="ObjectShortName">[235]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[234]">
+         <obj_property name="ElementShortName">[234]</obj_property>
+         <obj_property name="ObjectShortName">[234]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[233]">
+         <obj_property name="ElementShortName">[233]</obj_property>
+         <obj_property name="ObjectShortName">[233]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[232]">
+         <obj_property name="ElementShortName">[232]</obj_property>
+         <obj_property name="ObjectShortName">[232]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[231]">
+         <obj_property name="ElementShortName">[231]</obj_property>
+         <obj_property name="ObjectShortName">[231]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[230]">
+         <obj_property name="ElementShortName">[230]</obj_property>
+         <obj_property name="ObjectShortName">[230]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[229]">
+         <obj_property name="ElementShortName">[229]</obj_property>
+         <obj_property name="ObjectShortName">[229]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[228]">
+         <obj_property name="ElementShortName">[228]</obj_property>
+         <obj_property name="ObjectShortName">[228]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[227]">
+         <obj_property name="ElementShortName">[227]</obj_property>
+         <obj_property name="ObjectShortName">[227]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[226]">
+         <obj_property name="ElementShortName">[226]</obj_property>
+         <obj_property name="ObjectShortName">[226]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[225]">
+         <obj_property name="ElementShortName">[225]</obj_property>
+         <obj_property name="ObjectShortName">[225]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[224]">
+         <obj_property name="ElementShortName">[224]</obj_property>
+         <obj_property name="ObjectShortName">[224]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[223]">
+         <obj_property name="ElementShortName">[223]</obj_property>
+         <obj_property name="ObjectShortName">[223]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[222]">
+         <obj_property name="ElementShortName">[222]</obj_property>
+         <obj_property name="ObjectShortName">[222]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[221]">
+         <obj_property name="ElementShortName">[221]</obj_property>
+         <obj_property name="ObjectShortName">[221]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[220]">
+         <obj_property name="ElementShortName">[220]</obj_property>
+         <obj_property name="ObjectShortName">[220]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[219]">
+         <obj_property name="ElementShortName">[219]</obj_property>
+         <obj_property name="ObjectShortName">[219]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[218]">
+         <obj_property name="ElementShortName">[218]</obj_property>
+         <obj_property name="ObjectShortName">[218]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[217]">
+         <obj_property name="ElementShortName">[217]</obj_property>
+         <obj_property name="ObjectShortName">[217]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[216]">
+         <obj_property name="ElementShortName">[216]</obj_property>
+         <obj_property name="ObjectShortName">[216]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[215]">
+         <obj_property name="ElementShortName">[215]</obj_property>
+         <obj_property name="ObjectShortName">[215]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[214]">
+         <obj_property name="ElementShortName">[214]</obj_property>
+         <obj_property name="ObjectShortName">[214]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[213]">
+         <obj_property name="ElementShortName">[213]</obj_property>
+         <obj_property name="ObjectShortName">[213]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[212]">
+         <obj_property name="ElementShortName">[212]</obj_property>
+         <obj_property name="ObjectShortName">[212]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[211]">
+         <obj_property name="ElementShortName">[211]</obj_property>
+         <obj_property name="ObjectShortName">[211]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[210]">
+         <obj_property name="ElementShortName">[210]</obj_property>
+         <obj_property name="ObjectShortName">[210]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[209]">
+         <obj_property name="ElementShortName">[209]</obj_property>
+         <obj_property name="ObjectShortName">[209]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[208]">
+         <obj_property name="ElementShortName">[208]</obj_property>
+         <obj_property name="ObjectShortName">[208]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[207]">
+         <obj_property name="ElementShortName">[207]</obj_property>
+         <obj_property name="ObjectShortName">[207]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[206]">
+         <obj_property name="ElementShortName">[206]</obj_property>
+         <obj_property name="ObjectShortName">[206]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[205]">
+         <obj_property name="ElementShortName">[205]</obj_property>
+         <obj_property name="ObjectShortName">[205]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[204]">
+         <obj_property name="ElementShortName">[204]</obj_property>
+         <obj_property name="ObjectShortName">[204]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[203]">
+         <obj_property name="ElementShortName">[203]</obj_property>
+         <obj_property name="ObjectShortName">[203]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[202]">
+         <obj_property name="ElementShortName">[202]</obj_property>
+         <obj_property name="ObjectShortName">[202]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[201]">
+         <obj_property name="ElementShortName">[201]</obj_property>
+         <obj_property name="ObjectShortName">[201]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[200]">
+         <obj_property name="ElementShortName">[200]</obj_property>
+         <obj_property name="ObjectShortName">[200]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[199]">
+         <obj_property name="ElementShortName">[199]</obj_property>
+         <obj_property name="ObjectShortName">[199]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[198]">
+         <obj_property name="ElementShortName">[198]</obj_property>
+         <obj_property name="ObjectShortName">[198]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[197]">
+         <obj_property name="ElementShortName">[197]</obj_property>
+         <obj_property name="ObjectShortName">[197]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[196]">
+         <obj_property name="ElementShortName">[196]</obj_property>
+         <obj_property name="ObjectShortName">[196]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[195]">
+         <obj_property name="ElementShortName">[195]</obj_property>
+         <obj_property name="ObjectShortName">[195]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[194]">
+         <obj_property name="ElementShortName">[194]</obj_property>
+         <obj_property name="ObjectShortName">[194]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[193]">
+         <obj_property name="ElementShortName">[193]</obj_property>
+         <obj_property name="ObjectShortName">[193]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[192]">
+         <obj_property name="ElementShortName">[192]</obj_property>
+         <obj_property name="ObjectShortName">[192]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[191]">
+         <obj_property name="ElementShortName">[191]</obj_property>
+         <obj_property name="ObjectShortName">[191]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[190]">
+         <obj_property name="ElementShortName">[190]</obj_property>
+         <obj_property name="ObjectShortName">[190]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[189]">
+         <obj_property name="ElementShortName">[189]</obj_property>
+         <obj_property name="ObjectShortName">[189]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[188]">
+         <obj_property name="ElementShortName">[188]</obj_property>
+         <obj_property name="ObjectShortName">[188]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[187]">
+         <obj_property name="ElementShortName">[187]</obj_property>
+         <obj_property name="ObjectShortName">[187]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[186]">
+         <obj_property name="ElementShortName">[186]</obj_property>
+         <obj_property name="ObjectShortName">[186]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[185]">
+         <obj_property name="ElementShortName">[185]</obj_property>
+         <obj_property name="ObjectShortName">[185]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[184]">
+         <obj_property name="ElementShortName">[184]</obj_property>
+         <obj_property name="ObjectShortName">[184]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[183]">
+         <obj_property name="ElementShortName">[183]</obj_property>
+         <obj_property name="ObjectShortName">[183]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[182]">
+         <obj_property name="ElementShortName">[182]</obj_property>
+         <obj_property name="ObjectShortName">[182]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[181]">
+         <obj_property name="ElementShortName">[181]</obj_property>
+         <obj_property name="ObjectShortName">[181]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[180]">
+         <obj_property name="ElementShortName">[180]</obj_property>
+         <obj_property name="ObjectShortName">[180]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[179]">
+         <obj_property name="ElementShortName">[179]</obj_property>
+         <obj_property name="ObjectShortName">[179]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[178]">
+         <obj_property name="ElementShortName">[178]</obj_property>
+         <obj_property name="ObjectShortName">[178]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[177]">
+         <obj_property name="ElementShortName">[177]</obj_property>
+         <obj_property name="ObjectShortName">[177]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[176]">
+         <obj_property name="ElementShortName">[176]</obj_property>
+         <obj_property name="ObjectShortName">[176]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[175]">
+         <obj_property name="ElementShortName">[175]</obj_property>
+         <obj_property name="ObjectShortName">[175]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[174]">
+         <obj_property name="ElementShortName">[174]</obj_property>
+         <obj_property name="ObjectShortName">[174]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[173]">
+         <obj_property name="ElementShortName">[173]</obj_property>
+         <obj_property name="ObjectShortName">[173]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[172]">
+         <obj_property name="ElementShortName">[172]</obj_property>
+         <obj_property name="ObjectShortName">[172]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[171]">
+         <obj_property name="ElementShortName">[171]</obj_property>
+         <obj_property name="ObjectShortName">[171]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[170]">
+         <obj_property name="ElementShortName">[170]</obj_property>
+         <obj_property name="ObjectShortName">[170]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[169]">
+         <obj_property name="ElementShortName">[169]</obj_property>
+         <obj_property name="ObjectShortName">[169]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[168]">
+         <obj_property name="ElementShortName">[168]</obj_property>
+         <obj_property name="ObjectShortName">[168]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[167]">
+         <obj_property name="ElementShortName">[167]</obj_property>
+         <obj_property name="ObjectShortName">[167]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[166]">
+         <obj_property name="ElementShortName">[166]</obj_property>
+         <obj_property name="ObjectShortName">[166]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[165]">
+         <obj_property name="ElementShortName">[165]</obj_property>
+         <obj_property name="ObjectShortName">[165]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[164]">
+         <obj_property name="ElementShortName">[164]</obj_property>
+         <obj_property name="ObjectShortName">[164]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[163]">
+         <obj_property name="ElementShortName">[163]</obj_property>
+         <obj_property name="ObjectShortName">[163]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[162]">
+         <obj_property name="ElementShortName">[162]</obj_property>
+         <obj_property name="ObjectShortName">[162]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[161]">
+         <obj_property name="ElementShortName">[161]</obj_property>
+         <obj_property name="ObjectShortName">[161]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[160]">
+         <obj_property name="ElementShortName">[160]</obj_property>
+         <obj_property name="ObjectShortName">[160]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[159]">
+         <obj_property name="ElementShortName">[159]</obj_property>
+         <obj_property name="ObjectShortName">[159]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[158]">
+         <obj_property name="ElementShortName">[158]</obj_property>
+         <obj_property name="ObjectShortName">[158]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[157]">
+         <obj_property name="ElementShortName">[157]</obj_property>
+         <obj_property name="ObjectShortName">[157]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[156]">
+         <obj_property name="ElementShortName">[156]</obj_property>
+         <obj_property name="ObjectShortName">[156]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[155]">
+         <obj_property name="ElementShortName">[155]</obj_property>
+         <obj_property name="ObjectShortName">[155]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[154]">
+         <obj_property name="ElementShortName">[154]</obj_property>
+         <obj_property name="ObjectShortName">[154]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[153]">
+         <obj_property name="ElementShortName">[153]</obj_property>
+         <obj_property name="ObjectShortName">[153]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[152]">
+         <obj_property name="ElementShortName">[152]</obj_property>
+         <obj_property name="ObjectShortName">[152]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[151]">
+         <obj_property name="ElementShortName">[151]</obj_property>
+         <obj_property name="ObjectShortName">[151]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[150]">
+         <obj_property name="ElementShortName">[150]</obj_property>
+         <obj_property name="ObjectShortName">[150]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[149]">
+         <obj_property name="ElementShortName">[149]</obj_property>
+         <obj_property name="ObjectShortName">[149]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[148]">
+         <obj_property name="ElementShortName">[148]</obj_property>
+         <obj_property name="ObjectShortName">[148]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[147]">
+         <obj_property name="ElementShortName">[147]</obj_property>
+         <obj_property name="ObjectShortName">[147]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[146]">
+         <obj_property name="ElementShortName">[146]</obj_property>
+         <obj_property name="ObjectShortName">[146]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[145]">
+         <obj_property name="ElementShortName">[145]</obj_property>
+         <obj_property name="ObjectShortName">[145]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[144]">
+         <obj_property name="ElementShortName">[144]</obj_property>
+         <obj_property name="ObjectShortName">[144]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[143]">
+         <obj_property name="ElementShortName">[143]</obj_property>
+         <obj_property name="ObjectShortName">[143]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[142]">
+         <obj_property name="ElementShortName">[142]</obj_property>
+         <obj_property name="ObjectShortName">[142]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[141]">
+         <obj_property name="ElementShortName">[141]</obj_property>
+         <obj_property name="ObjectShortName">[141]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[140]">
+         <obj_property name="ElementShortName">[140]</obj_property>
+         <obj_property name="ObjectShortName">[140]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[139]">
+         <obj_property name="ElementShortName">[139]</obj_property>
+         <obj_property name="ObjectShortName">[139]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[138]">
+         <obj_property name="ElementShortName">[138]</obj_property>
+         <obj_property name="ObjectShortName">[138]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[137]">
+         <obj_property name="ElementShortName">[137]</obj_property>
+         <obj_property name="ObjectShortName">[137]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[136]">
+         <obj_property name="ElementShortName">[136]</obj_property>
+         <obj_property name="ObjectShortName">[136]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[135]">
+         <obj_property name="ElementShortName">[135]</obj_property>
+         <obj_property name="ObjectShortName">[135]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[134]">
+         <obj_property name="ElementShortName">[134]</obj_property>
+         <obj_property name="ObjectShortName">[134]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[133]">
+         <obj_property name="ElementShortName">[133]</obj_property>
+         <obj_property name="ObjectShortName">[133]</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[132]">
+         <obj_property name="ElementShortName">[132]</obj_property>
+         <obj_property name="ObjectShortName">[132]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[131]">
+         <obj_property name="ElementShortName">[131]</obj_property>
+         <obj_property name="ObjectShortName">[131]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[130]">
+         <obj_property name="ElementShortName">[130]</obj_property>
+         <obj_property name="ObjectShortName">[130]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[129]">
+         <obj_property name="ElementShortName">[129]</obj_property>
+         <obj_property name="ObjectShortName">[129]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[128]">
+         <obj_property name="ElementShortName">[128]</obj_property>
+         <obj_property name="ObjectShortName">[128]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[127]">
+         <obj_property name="ElementShortName">[127]</obj_property>
+         <obj_property name="ObjectShortName">[127]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[126]">
+         <obj_property name="ElementShortName">[126]</obj_property>
+         <obj_property name="ObjectShortName">[126]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[125]">
+         <obj_property name="ElementShortName">[125]</obj_property>
+         <obj_property name="ObjectShortName">[125]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[124]">
+         <obj_property name="ElementShortName">[124]</obj_property>
+         <obj_property name="ObjectShortName">[124]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[123]">
+         <obj_property name="ElementShortName">[123]</obj_property>
+         <obj_property name="ObjectShortName">[123]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[122]">
+         <obj_property name="ElementShortName">[122]</obj_property>
+         <obj_property name="ObjectShortName">[122]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[121]">
+         <obj_property name="ElementShortName">[121]</obj_property>
+         <obj_property name="ObjectShortName">[121]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[120]">
+         <obj_property name="ElementShortName">[120]</obj_property>
+         <obj_property name="ObjectShortName">[120]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[119]">
+         <obj_property name="ElementShortName">[119]</obj_property>
+         <obj_property name="ObjectShortName">[119]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[118]">
+         <obj_property name="ElementShortName">[118]</obj_property>
+         <obj_property name="ObjectShortName">[118]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[117]">
+         <obj_property name="ElementShortName">[117]</obj_property>
+         <obj_property name="ObjectShortName">[117]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[116]">
+         <obj_property name="ElementShortName">[116]</obj_property>
+         <obj_property name="ObjectShortName">[116]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[115]">
+         <obj_property name="ElementShortName">[115]</obj_property>
+         <obj_property name="ObjectShortName">[115]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[114]">
+         <obj_property name="ElementShortName">[114]</obj_property>
+         <obj_property name="ObjectShortName">[114]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[113]">
+         <obj_property name="ElementShortName">[113]</obj_property>
+         <obj_property name="ObjectShortName">[113]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[112]">
+         <obj_property name="ElementShortName">[112]</obj_property>
+         <obj_property name="ObjectShortName">[112]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[111]">
+         <obj_property name="ElementShortName">[111]</obj_property>
+         <obj_property name="ObjectShortName">[111]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[110]">
+         <obj_property name="ElementShortName">[110]</obj_property>
+         <obj_property name="ObjectShortName">[110]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[109]">
+         <obj_property name="ElementShortName">[109]</obj_property>
+         <obj_property name="ObjectShortName">[109]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[108]">
+         <obj_property name="ElementShortName">[108]</obj_property>
+         <obj_property name="ObjectShortName">[108]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[107]">
+         <obj_property name="ElementShortName">[107]</obj_property>
+         <obj_property name="ObjectShortName">[107]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[106]">
+         <obj_property name="ElementShortName">[106]</obj_property>
+         <obj_property name="ObjectShortName">[106]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[105]">
+         <obj_property name="ElementShortName">[105]</obj_property>
+         <obj_property name="ObjectShortName">[105]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[104]">
+         <obj_property name="ElementShortName">[104]</obj_property>
+         <obj_property name="ObjectShortName">[104]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[103]">
+         <obj_property name="ElementShortName">[103]</obj_property>
+         <obj_property name="ObjectShortName">[103]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[102]">
+         <obj_property name="ElementShortName">[102]</obj_property>
+         <obj_property name="ObjectShortName">[102]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[101]">
+         <obj_property name="ElementShortName">[101]</obj_property>
+         <obj_property name="ObjectShortName">[101]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[100]">
+         <obj_property name="ElementShortName">[100]</obj_property>
+         <obj_property name="ObjectShortName">[100]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[99]">
+         <obj_property name="ElementShortName">[99]</obj_property>
+         <obj_property name="ObjectShortName">[99]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[98]">
+         <obj_property name="ElementShortName">[98]</obj_property>
+         <obj_property name="ObjectShortName">[98]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[97]">
+         <obj_property name="ElementShortName">[97]</obj_property>
+         <obj_property name="ObjectShortName">[97]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[96]">
+         <obj_property name="ElementShortName">[96]</obj_property>
+         <obj_property name="ObjectShortName">[96]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[95]">
+         <obj_property name="ElementShortName">[95]</obj_property>
+         <obj_property name="ObjectShortName">[95]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[94]">
+         <obj_property name="ElementShortName">[94]</obj_property>
+         <obj_property name="ObjectShortName">[94]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[93]">
+         <obj_property name="ElementShortName">[93]</obj_property>
+         <obj_property name="ObjectShortName">[93]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[92]">
+         <obj_property name="ElementShortName">[92]</obj_property>
+         <obj_property name="ObjectShortName">[92]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[91]">
+         <obj_property name="ElementShortName">[91]</obj_property>
+         <obj_property name="ObjectShortName">[91]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[90]">
+         <obj_property name="ElementShortName">[90]</obj_property>
+         <obj_property name="ObjectShortName">[90]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[89]">
+         <obj_property name="ElementShortName">[89]</obj_property>
+         <obj_property name="ObjectShortName">[89]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[88]">
+         <obj_property name="ElementShortName">[88]</obj_property>
+         <obj_property name="ObjectShortName">[88]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[87]">
+         <obj_property name="ElementShortName">[87]</obj_property>
+         <obj_property name="ObjectShortName">[87]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[86]">
+         <obj_property name="ElementShortName">[86]</obj_property>
+         <obj_property name="ObjectShortName">[86]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[85]">
+         <obj_property name="ElementShortName">[85]</obj_property>
+         <obj_property name="ObjectShortName">[85]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[84]">
+         <obj_property name="ElementShortName">[84]</obj_property>
+         <obj_property name="ObjectShortName">[84]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[83]">
+         <obj_property name="ElementShortName">[83]</obj_property>
+         <obj_property name="ObjectShortName">[83]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[82]">
+         <obj_property name="ElementShortName">[82]</obj_property>
+         <obj_property name="ObjectShortName">[82]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[81]">
+         <obj_property name="ElementShortName">[81]</obj_property>
+         <obj_property name="ObjectShortName">[81]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[80]">
+         <obj_property name="ElementShortName">[80]</obj_property>
+         <obj_property name="ObjectShortName">[80]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[79]">
+         <obj_property name="ElementShortName">[79]</obj_property>
+         <obj_property name="ObjectShortName">[79]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[78]">
+         <obj_property name="ElementShortName">[78]</obj_property>
+         <obj_property name="ObjectShortName">[78]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[77]">
+         <obj_property name="ElementShortName">[77]</obj_property>
+         <obj_property name="ObjectShortName">[77]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[76]">
+         <obj_property name="ElementShortName">[76]</obj_property>
+         <obj_property name="ObjectShortName">[76]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[75]">
+         <obj_property name="ElementShortName">[75]</obj_property>
+         <obj_property name="ObjectShortName">[75]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[74]">
+         <obj_property name="ElementShortName">[74]</obj_property>
+         <obj_property name="ObjectShortName">[74]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[73]">
+         <obj_property name="ElementShortName">[73]</obj_property>
+         <obj_property name="ObjectShortName">[73]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[72]">
+         <obj_property name="ElementShortName">[72]</obj_property>
+         <obj_property name="ObjectShortName">[72]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[71]">
+         <obj_property name="ElementShortName">[71]</obj_property>
+         <obj_property name="ObjectShortName">[71]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[70]">
+         <obj_property name="ElementShortName">[70]</obj_property>
+         <obj_property name="ObjectShortName">[70]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[69]">
+         <obj_property name="ElementShortName">[69]</obj_property>
+         <obj_property name="ObjectShortName">[69]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[68]">
+         <obj_property name="ElementShortName">[68]</obj_property>
+         <obj_property name="ObjectShortName">[68]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[67]">
+         <obj_property name="ElementShortName">[67]</obj_property>
+         <obj_property name="ObjectShortName">[67]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[66]">
+         <obj_property name="ElementShortName">[66]</obj_property>
+         <obj_property name="ObjectShortName">[66]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[65]">
+         <obj_property name="ElementShortName">[65]</obj_property>
+         <obj_property name="ObjectShortName">[65]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[64]">
+         <obj_property name="ElementShortName">[64]</obj_property>
+         <obj_property name="ObjectShortName">[64]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[63]">
+         <obj_property name="ElementShortName">[63]</obj_property>
+         <obj_property name="ObjectShortName">[63]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[62]">
+         <obj_property name="ElementShortName">[62]</obj_property>
+         <obj_property name="ObjectShortName">[62]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[61]">
+         <obj_property name="ElementShortName">[61]</obj_property>
+         <obj_property name="ObjectShortName">[61]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[60]">
+         <obj_property name="ElementShortName">[60]</obj_property>
+         <obj_property name="ObjectShortName">[60]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[59]">
+         <obj_property name="ElementShortName">[59]</obj_property>
+         <obj_property name="ObjectShortName">[59]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[58]">
+         <obj_property name="ElementShortName">[58]</obj_property>
+         <obj_property name="ObjectShortName">[58]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[57]">
+         <obj_property name="ElementShortName">[57]</obj_property>
+         <obj_property name="ObjectShortName">[57]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[56]">
+         <obj_property name="ElementShortName">[56]</obj_property>
+         <obj_property name="ObjectShortName">[56]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[55]">
+         <obj_property name="ElementShortName">[55]</obj_property>
+         <obj_property name="ObjectShortName">[55]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[54]">
+         <obj_property name="ElementShortName">[54]</obj_property>
+         <obj_property name="ObjectShortName">[54]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[53]">
+         <obj_property name="ElementShortName">[53]</obj_property>
+         <obj_property name="ObjectShortName">[53]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[52]">
+         <obj_property name="ElementShortName">[52]</obj_property>
+         <obj_property name="ObjectShortName">[52]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[51]">
+         <obj_property name="ElementShortName">[51]</obj_property>
+         <obj_property name="ObjectShortName">[51]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[50]">
+         <obj_property name="ElementShortName">[50]</obj_property>
+         <obj_property name="ObjectShortName">[50]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[49]">
+         <obj_property name="ElementShortName">[49]</obj_property>
+         <obj_property name="ObjectShortName">[49]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[48]">
+         <obj_property name="ElementShortName">[48]</obj_property>
+         <obj_property name="ObjectShortName">[48]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[47]">
+         <obj_property name="ElementShortName">[47]</obj_property>
+         <obj_property name="ObjectShortName">[47]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[46]">
+         <obj_property name="ElementShortName">[46]</obj_property>
+         <obj_property name="ObjectShortName">[46]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[45]">
+         <obj_property name="ElementShortName">[45]</obj_property>
+         <obj_property name="ObjectShortName">[45]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[44]">
+         <obj_property name="ElementShortName">[44]</obj_property>
+         <obj_property name="ObjectShortName">[44]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[43]">
+         <obj_property name="ElementShortName">[43]</obj_property>
+         <obj_property name="ObjectShortName">[43]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[42]">
+         <obj_property name="ElementShortName">[42]</obj_property>
+         <obj_property name="ObjectShortName">[42]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[41]">
+         <obj_property name="ElementShortName">[41]</obj_property>
+         <obj_property name="ObjectShortName">[41]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[40]">
+         <obj_property name="ElementShortName">[40]</obj_property>
+         <obj_property name="ObjectShortName">[40]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[39]">
+         <obj_property name="ElementShortName">[39]</obj_property>
+         <obj_property name="ObjectShortName">[39]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[38]">
+         <obj_property name="ElementShortName">[38]</obj_property>
+         <obj_property name="ObjectShortName">[38]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[37]">
+         <obj_property name="ElementShortName">[37]</obj_property>
+         <obj_property name="ObjectShortName">[37]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[36]">
+         <obj_property name="ElementShortName">[36]</obj_property>
+         <obj_property name="ObjectShortName">[36]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[35]">
+         <obj_property name="ElementShortName">[35]</obj_property>
+         <obj_property name="ObjectShortName">[35]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[34]">
+         <obj_property name="ElementShortName">[34]</obj_property>
+         <obj_property name="ObjectShortName">[34]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[33]">
+         <obj_property name="ElementShortName">[33]</obj_property>
+         <obj_property name="ObjectShortName">[33]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[32]">
+         <obj_property name="ElementShortName">[32]</obj_property>
+         <obj_property name="ObjectShortName">[32]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[31]">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[30]">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[29]">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[28]">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[27]">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[26]">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[25]">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[24]">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[23]">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[22]">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[21]">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[20]">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[19]">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[18]">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[17]">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[16]">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[15]">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[14]">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[13]">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[12]">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[11]">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[10]">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[9]">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[8]">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[7]">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[6]">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[5]">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[4]">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[3]">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/processor_tb/dut/dp/ID_EX/q[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/EXECUTE/signImm_E">
+      <obj_property name="ElementShortName">signImm_E[63:0]</obj_property>
+      <obj_property name="ObjectShortName">signImm_E[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/EXECUTE/aluResult_E">
+      <obj_property name="ElementShortName">aluResult_E[63:0]</obj_property>
+      <obj_property name="ObjectShortName">aluResult_E[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/WRITEBACK/aluResult_W">
+      <obj_property name="ElementShortName">aluResult_W[63:0]</obj_property>
+      <obj_property name="ObjectShortName">aluResult_W[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/WRITEBACK/DM_readData_W">
+      <obj_property name="ElementShortName">DM_readData_W[63:0]</obj_property>
+      <obj_property name="ObjectShortName">DM_readData_W[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/processor_tb/dut/dp/WRITEBACK/writeData3_W">
+      <obj_property name="ElementShortName">writeData3_W[63:0]</obj_property>
+      <obj_property name="ObjectShortName">writeData3_W[63:0]</obj_property>
+   </wvobject>
+</wave_config>
