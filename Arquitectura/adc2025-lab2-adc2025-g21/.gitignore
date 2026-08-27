@@ -1,0 +1,5 @@
+*.img
+__pycache__/
+se_results/
+sim.log
+*.out

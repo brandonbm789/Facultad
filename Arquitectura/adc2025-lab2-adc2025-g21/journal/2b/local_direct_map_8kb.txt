@@ -1,0 +1,36 @@
+MISS RATE = 3080 / (26632 + 3080) = 10.3%
+
+simInsts                                                               57350.0
+system.cpu_cluster.cpus.numCycles                                      110648.0
+system.cpu_cluster.cpus.cpi                                            1.93
+system.cpu_cluster.cpus.branchPred.lookups                             26644.0
+system.cpu_cluster.cpus.branchPred.condPredicted                       26632.0
+system.cpu_cluster.cpus.branchPred.condIncorrect                       3080.0
+system.cpu_cluster.cpus.branchPred.BTBLookups                          26628.0
+system.cpu_cluster.cpus.branchPred.BTBUpdates                          7.0
+system.cpu_cluster.cpus.branchPred.BTBHits                             26620.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntAlu         57349.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntMult        0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::IntDiv         0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatAdd       0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCmp       0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatCvt       0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::FloatMult      0.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemRead        1.0
+system.cpu_cluster.cpus.commitStats0.committedInstType::MemWrite       0.0
+system.cpu_cluster.cpus.dcache.overallHits::total                      4.0
+system.cpu_cluster.cpus.dcache.overallMisses::total                    0.0
+system.cpu_cluster.cpus.dcache.overallAccesses::total                  4.0
+system.cpu_cluster.cpus.dcache.replacements                            0.0
+system.cpu_cluster.cpus.dcache.ReadReq.hits::total                     4.0
+system.cpu_cluster.cpus.dcache.ReadReq.accesses::total                 4.0
+system.cpu_cluster.cpus.dcache.WriteReq.hits::total                    0.0
+system.cpu_cluster.cpus.dcache.WriteReq.accesses::total                0.0
+system.cpu_cluster.cpus.icache.overallHits::total                      55317.0
+system.cpu_cluster.cpus.icache.overallMisses::total                    0.0
+system.cpu_cluster.cpus.icache.overallAccesses::total                  55317.0
+system.cpu_cluster.cpus.icache.replacements                            0.0
+system.cpu_cluster.l2.overallMisses::total                             0.0
+system.cpu_cluster.l2.overallAccesses::total                           0.0
+system.cpu_cluster.l2.replacements                                     0.0
+system.cpu_cluster.cpus.idleCycles                                     0.0
