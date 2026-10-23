@@ -44,14 +44,14 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-  volatile uint8_t button_pressed_flag = 0; // Obligatorio el uso de volatile
+volatile uint8_t button_pressed_flag = 0; // Obligatorio el uso de volatile
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+void AvanzarSecuenciaLEDs(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -67,8 +67,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-  HAL_TIM_Base_Start_IT(&htim3);
-  HAL_TIM_Base_Start_IT(&htim4);
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -98,6 +97,9 @@ int main(void)
   uint8_t state = 0;
   uint8_t previousState = GPIO_PIN_RESET;
   uint8_t currentState;
+  HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_Base_Start_IT(&htim3);
+  HAL_TIM_Base_Start_IT(&htim4);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -172,13 +174,13 @@ int main(void)
 	}
 	*/
 	//-------------------Desafio 4-------------------------------
-	  /*
-	  if (__HAL_TIM_GET_FLAG(&htim2, TIM_FLAG_UPDATE) != RESET) {
-	  __HAL_TIM_CLEAR_FLAG(&htim2, TIM_FLAG_UPDATE);
-	  // Ejecutar avance de la secuencia de LEDs
-	  AvanzarSecuenciaLEDs();
-	  }
-	  */
+
+	  /*if (__HAL_TIM_GET_FLAG(&htim2, TIM_FLAG_UPDATE) != RESET) {
+		  __HAL_TIM_CLEAR_FLAG(&htim2, TIM_FLAG_UPDATE);
+		  // Ejecutar avance de la secuencia de LEDs
+		  AvanzarSecuenciaLEDs();
+	  }*/
+
 	//--------------------Desafio 5-------------------------------
 	//--------------------Desafio 6-------------------------------
 	if (button_pressed_flag) {
@@ -254,6 +256,7 @@ void AvanzarSecuenciaLEDs(void)
 			HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LD6_GPIO_Port, LD6_Pin, GPIO_PIN_SET);
 			state++;
+			break;
 		case 4:
 			HAL_GPIO_WritePin(LD6_GPIO_Port, LD6_Pin, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_SET);
@@ -270,13 +273,13 @@ void AvanzarSecuenciaLEDs(void)
 	}
 }
 
-/*
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+
+/*void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM3) {
 		HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
 	}
-}
-*/
+}*/
+
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM4) {
 		static uint8_t press_counter = 0;

@@ -1,0 +1,33 @@
+16:18:04 **** Incremental Build of configuration Debug for project Lab-2-F11 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:11: warning: unused variable 'currentState' [-Wunused-variable]
+   99 |   uint8_t currentState;
+      |           ^~~~~~~~~~~~
+../Core/Src/main.c:98:11: warning: unused variable 'previousState' [-Wunused-variable]
+   98 |   uint8_t previousState = GPIO_PIN_RESET;
+      |           ^~~~~~~~~~~~~
+../Core/Src/main.c:97:11: warning: unused variable 'state' [-Wunused-variable]
+   97 |   uint8_t state = 0;
+      |           ^~~~~
+../Core/Src/main.c:96:12: warning: unused variable 'currentTime' [-Wunused-variable]
+   96 |   uint32_t currentTime = 0;
+      |            ^~~~~~~~~~~
+../Core/Src/main.c:95:12: warning: unused variable 'previousTime' [-Wunused-variable]
+   95 |   uint32_t previousTime = 0;
+      |            ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "Lab-2-F11.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/brandonbm789/Facultad/Micro/Lab-2-F11/STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab-2-F11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lab-2-F11.elf
+ 
+arm-none-eabi-size  Lab-2-F11.elf 
+arm-none-eabi-objdump -h -S Lab-2-F11.elf  > "Lab-2-F11.list"
+   text	   data	    bss	    dec	    hex	filename
+  11180	     12	   1788	  12980	   32b4	Lab-2-F11.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab-2-F11.list
+ 
+
+16:18:05 Build Finished. 0 errors, 5 warnings. (took 481ms)
+

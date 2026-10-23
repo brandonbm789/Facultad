@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<list key="findhistory">
+			<item value="GPIO_PIN_15"/>
+			<item value="GPIO_PIN_0"/>
+			<item value="USER_BTN"/>
+			<item value="USER"/>
+			<item value="HAL_Delay"/>
+			<item value="PIN_0"/>
+			<item value="PA0"/>
+			<item value="de"/>
+			<item value="LD"/>
+		</list>
+	</section>
+</section>
