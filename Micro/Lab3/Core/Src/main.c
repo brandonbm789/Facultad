@@ -48,7 +48,9 @@
 
 /* USER CODE BEGIN PV */
 static HCSR04_HandleTypeDef sensor;
-static LM35_HandleTypeDef sens_temp;
+static LM35_HandleTypeDef sens_temp_NB;
+static LM35_HandleTypeDef sens_temp1;
+static LM35_HandleTypeDef sens_temp2;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -72,6 +74,9 @@ int main(void)
 	uint32_t currentTime = 0;
 	uint32_t previousTime = 0;
 	float distance = 0;
+	float temp_sens_1 = 0.0f;
+	float temp_sens_2 = 0.0f;
+	float temp_NB = 0.0f;
 
 	sensor.htim = &htim2;
 	sensor.IC_Channel = TIM_CHANNEL_1;
@@ -88,6 +93,10 @@ int main(void)
 
   /* USER CODE BEGIN Init */
 
+//  LM35_Init(&sens_temp_NB, &hadc1, ADC_CHANNEL_1); //prueba no bloqueante
+  LM35_Init(&sens_temp1, &hadc1, ADC_CHANNEL_1);
+  LM35_Init(&sens_temp2, &hadc1, ADC_CHANNEL_1);
+
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -102,7 +111,7 @@ int main(void)
   MX_TIM2_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
-
+//  	LM35_Start_Conversion(&sens_temp_NB); //prueba no bloqueante
 	hcsr04_init(&sensor);
 	hcsr04_start_measurement(&sensor);
   /* USER CODE END 2 */
@@ -135,6 +144,13 @@ int main(void)
 	  if (currentTime - previousTime >= 60) {
 		hcsr04_start_measurement(&sensor);
 		previousTime = currentTime;
+	}
+
+	  temp_sens_1 = LM35_Read_Blocking(&sens_temp1);
+	  temp_sens_2 = LM35_Read_Blocking(&sens_temp2);
+
+	  if (LM35_Get_Temperature(&sens_temp_NB, &temp_NB) == true) {
+		 LM35_Start_Conversion(&sens_temp_NB);
 	}
   }
   /* USER CODE END 3 */
@@ -188,10 +204,10 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim){
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 
-	if(hadc == &sens_temp){
-		sens_temp.data = HAL_ADC_GetValue(hadc);
+	if(hadc == sens_temp_NB.hadc){
+		sens_temp_NB.data = HAL_ADC_GetValue(hadc);
 
-		sens_temp._data_ready = 1;
+		sens_temp_NB._data_ready = 1;
 
 		HAL_ADC_Stop_IT(hadc);
 	}
