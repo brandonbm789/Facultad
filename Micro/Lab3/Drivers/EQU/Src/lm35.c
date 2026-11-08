@@ -1,5 +1,4 @@
 #include "lm35.h"
-#include <stdbool.h>
 
 void LM35_Init(LM35_HandleTypeDef *hlm35, ADC_HandleTypeDef *hadc, uint32_t canal){
 	hlm35->_data_ready = 0;
@@ -45,6 +44,16 @@ void LM35_Start_Conversion(LM35_HandleTypeDef *hlm35){
 
 bool LM35_Get_Temperature(LM35_HandleTypeDef *hlm35, float *out_temp){
 
+	if (hlm35->_data_ready == 1) {
+		float temp = (float)hlm35->data * 330.0f / 4095.0f;
+		*out_temp = temp;
+
+		hlm35->_data_ready = 0;
+
+		return true;
+	}
+
+	return false;
 }
 
 
