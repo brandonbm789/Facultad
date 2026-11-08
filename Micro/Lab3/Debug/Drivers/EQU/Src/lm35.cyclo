@@ -1,0 +1,4 @@
+../Drivers/EQU/Src/lm35.c:4:6:LM35_Init	1
+../Drivers/EQU/Src/lm35.c:11:7:LM35_Read_Blocking	2
+../Drivers/EQU/Src/lm35.c:34:6:LM35_Start_Conversion	1
+../Drivers/EQU/Src/lm35.c:46:6:LM35_Get_Temperature	1

@@ -1,0 +1,8 @@
+../Drivers/EQU/Src/HC_SR04.c:5:13:delay_us_approx	2
+../Drivers/EQU/Src/HC_SR04.c:15:17:get_tim_it_source	5
+../Drivers/EQU/Src/HC_SR04.c:31:17:get_hal_active_channel	5
+../Drivers/EQU/Src/HC_SR04.c:48:6:hcsr04_init	8
+../Drivers/EQU/Src/HC_SR04.c:78:6:hcsr04_start_measurement	9
+../Drivers/EQU/Src/HC_SR04.c:115:5:hcsr04_is_data_ready	1
+../Drivers/EQU/Src/HC_SR04.c:124:7:hcsr04_get_distance_cm	2
+../Drivers/EQU/Src/HC_SR04.c:142:6:hcsr04_tim_ic_callback	18
