@@ -19,8 +19,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "i2c.h"
 #include "tim.h"
 #include "gpio.h"
+#include "lsm303.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -31,7 +33,11 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+static LSM303_HandleTypeDef acelerometro;
+static HCSR04_HandleTypeDef sensor;
+static LM35_HandleTypeDef sens_temp_NB;
+static LM35_HandleTypeDef sens_temp1;
+static LM35_HandleTypeDef sens_temp2;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -47,10 +53,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-static HCSR04_HandleTypeDef sensor;
-static LM35_HandleTypeDef sens_temp_NB;
-static LM35_HandleTypeDef sens_temp1;
-static LM35_HandleTypeDef sens_temp2;
+volatile float accel_x_g = 0.0f;
+volatile float accel_y_g = 0.0f;
+volatile float accel_z_g = 0.0f;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -61,6 +66,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+
 /* USER CODE END 0 */
 
 /**
@@ -73,6 +80,7 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	uint32_t currentTime = 0;
 	uint32_t previousTime = 0;
+	uint32_t previousTime_LED = 0;
 	float distance = 0;
 	float temp_sens_1 = 0.0f;
 	float temp_sens_2 = 0.0f;
@@ -110,10 +118,16 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM2_Init();
   MX_ADC1_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 //  	LM35_Start_Conversion(&sens_temp_NB); //prueba no bloqueante
 	hcsr04_init(&sensor);
 	hcsr04_start_measurement(&sensor);
+
+
+	if (LSM303_Init(&acelerometro, &hi2c1) != HAL_OK) {
+	      Error_Handler();
+	  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -123,28 +137,30 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if (hcsr04_is_data_ready(&sensor)) {
-		  distance = hcsr04_get_distance_cm(&sensor);
-		  if (distance > 50.0) {
-				HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
-				HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_SET);
-				HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
-		  } else if (20.0 <= distance && distance <= 50.0){
-			  	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
-			    HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);
-			    HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
-		  } else {
-			    HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
-			    HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);
-			    HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_SET);
-		  }
-	}
-
 	  currentTime = HAL_GetTick();
-	  if (currentTime - previousTime >= 60) {
-		hcsr04_start_measurement(&sensor);
-		previousTime = currentTime;
-	}
+//	  if (hcsr04_is_data_ready(&sensor)) {
+//		  distance = hcsr04_get_distance_cm(&sensor);
+//		  if (distance > 50.0) {
+//				HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+//				HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_SET);
+//				HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
+//		  } else if (20.0 <= distance && distance <= 50.0){
+//			  	HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
+//			    HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);
+//			    HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
+//		  } else {
+//			    HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+//			    HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);
+//			    HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_SET);
+//		  }
+//	}
+//
+//	  if (currentTime - previousTime >= 60) {
+//		hcsr04_start_measurement(&sensor);
+//		previousTime = currentTime;
+//	}
+
+	  // ----------------------------- Desafio 2 ------------------------------------------------------------
 
 	  temp_sens_1 = LM35_Read_Blocking(&sens_temp1);
 	  temp_sens_2 = LM35_Read_Blocking(&sens_temp2);
@@ -152,6 +168,53 @@ int main(void)
 	  if (LM35_Get_Temperature(&sens_temp_NB, &temp_NB) == true) {
 		 LM35_Start_Conversion(&sens_temp_NB);
 	}
+
+
+	  // ------------------------------ Desafio 3 ---------------------------------------------------------
+
+	  LSM303_Read_Accel(&acelerometro);
+
+	  // 2. Conversión a Fuerzas G reales
+	  accel_x_g = (float)(acelerometro.accel_x_raw >> 4) * 0.001f;
+	  accel_y_g = (float)(acelerometro.accel_y_raw >> 4) * 0.001f;
+	  accel_z_g = (float)(acelerometro.accel_z_raw >> 4) * 0.001f;
+
+	  // 3. Control de LEDs por Inclinación (Umbral de ±0.4g)
+	  // Eje X: Inclinación Lateral (Izquierda / Derecha)
+	  if (accel_x_g > 0.4f) {
+		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_SET);   // Enciende LED Verde
+		  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_RESET);
+	  } else if (accel_x_g < -0.4f) {
+		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_SET);   // Enciende LED Rojo
+	  } else {
+		  HAL_GPIO_WritePin(GPIOD, LD4_Pin | LD5_Pin, GPIO_PIN_RESET);
+	  }
+
+	  // Eje Y: Inclinación Frontal (Adelante / Atrás)
+	  if (accel_y_g > 0.4f) {
+		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_SET);   // Enciende LED Naranja
+		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_RESET);
+	  } else if (accel_y_g < -0.4f) {
+		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_SET);   // Enciende LED Azul
+	  } else {
+		  HAL_GPIO_WritePin(GPIOD, LD3_Pin | LD6_Pin, GPIO_PIN_RESET);
+	  }
+
+
+	  // problema de parpadeo de led azul
+
+	  HAL_GPIO_TogglePin(GPIOD, LD6_Pin);
+	  HAL_Delay(500);
+
+	  // parpadeo no bloqueante
+
+
+//	 if (currentTime - previousTime_LED >= 500) {
+//		 HAL_GPIO_TogglePin(GPIOD, LD6_Pin);
+//		 previousTime_LED = currentTime;
+//	}
   }
   /* USER CODE END 3 */
 }
