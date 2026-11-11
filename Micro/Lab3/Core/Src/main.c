@@ -91,6 +91,10 @@ int main(void)
 	sensor.Trig_Port = TRIGGER_GPIO_Port;
 	sensor.Trig_Pin = TRIGGER_Pin;
 
+	uint32_t last_time_hcsr04 = 0;
+	uint32_t last_time_lm35 = 0;
+	uint32_t last_time_alarm = 0;
+	uint8_t alarm_active = 0;
 
   /* USER CODE END 1 */
 
@@ -101,9 +105,9 @@ int main(void)
 
   /* USER CODE BEGIN Init */
 
-//  LM35_Init(&sens_temp_NB, &hadc1, ADC_CHANNEL_1); //prueba no bloqueante
-  LM35_Init(&sens_temp1, &hadc1, ADC_CHANNEL_1);
-  LM35_Init(&sens_temp2, &hadc1, ADC_CHANNEL_1);
+  LM35_Init(&sens_temp_NB, &hadc1, ADC_CHANNEL_1); //prueba no bloqueante
+//  LM35_Init(&sens_temp1, &hadc1, ADC_CHANNEL_1);
+//  LM35_Init(&sens_temp2, &hadc1, ADC_CHANNEL_1);
 
   /* USER CODE END Init */
 
@@ -120,7 +124,8 @@ int main(void)
   MX_ADC1_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-//  	LM35_Start_Conversion(&sens_temp_NB); //prueba no bloqueante
+  	LM35_Start_Conversion(&sens_temp_NB); //prueba no bloqueante
+
 	hcsr04_init(&sensor);
 	hcsr04_start_measurement(&sensor);
 
@@ -162,51 +167,51 @@ int main(void)
 
 	  // ----------------------------- Desafio 2 ------------------------------------------------------------
 
-	  temp_sens_1 = LM35_Read_Blocking(&sens_temp1);
-	  temp_sens_2 = LM35_Read_Blocking(&sens_temp2);
-
-	  if (LM35_Get_Temperature(&sens_temp_NB, &temp_NB) == true) {
-		 LM35_Start_Conversion(&sens_temp_NB);
-	}
-
+//	  temp_sens_1 = LM35_Read_Blocking(&sens_temp1);
+//	  temp_sens_2 = LM35_Read_Blocking(&sens_temp2);
+//
+//	  if (LM35_Get_Temperature(&sens_temp_NB, &temp_NB) == true) {
+//		 LM35_Start_Conversion(&sens_temp_NB);
+//	}
+//
 
 	  // ------------------------------ Desafio 3 ---------------------------------------------------------
 
-	  LSM303_Read_Accel(&acelerometro);
-
-	  // 2. Conversión a Fuerzas G reales
-	  accel_x_g = (float)(acelerometro.accel_x_raw >> 4) * 0.001f;
-	  accel_y_g = (float)(acelerometro.accel_y_raw >> 4) * 0.001f;
-	  accel_z_g = (float)(acelerometro.accel_z_raw >> 4) * 0.001f;
-
-	  // 3. Control de LEDs por Inclinación (Umbral de ±0.4g)
-	  // Eje X: Inclinación Lateral (Izquierda / Derecha)
-	  if (accel_x_g > 0.4f) {
-		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_SET);   // Enciende LED Verde
-		  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_RESET);
-	  } else if (accel_x_g < -0.4f) {
-		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_RESET);
-		  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_SET);   // Enciende LED Rojo
-	  } else {
-		  HAL_GPIO_WritePin(GPIOD, LD4_Pin | LD5_Pin, GPIO_PIN_RESET);
-	  }
-
-	  // Eje Y: Inclinación Frontal (Adelante / Atrás)
-	  if (accel_y_g > 0.4f) {
-		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_SET);   // Enciende LED Naranja
-		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_RESET);
-	  } else if (accel_y_g < -0.4f) {
-		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_RESET);
-		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_SET);   // Enciende LED Azul
-	  } else {
-		  HAL_GPIO_WritePin(GPIOD, LD3_Pin | LD6_Pin, GPIO_PIN_RESET);
-	  }
+//	  LSM303_Read_Accel(&acelerometro);
+//
+//	  // 2. Conversión a Fuerzas G reales
+//	  accel_x_g = (float)(acelerometro.accel_x_raw >> 4) * 0.001f;
+//	  accel_y_g = (float)(acelerometro.accel_y_raw >> 4) * 0.001f;
+//	  accel_z_g = (float)(acelerometro.accel_z_raw >> 4) * 0.001f;
+//
+//	  // 3. Control de LEDs por Inclinación (Umbral de ±0.4g)
+//	  // Eje X: Inclinación Lateral (Izquierda / Derecha)
+//	  if (accel_x_g > 0.4f) {
+//		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_SET);   // Enciende LED Verde
+//		  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_RESET);
+//	  } else if (accel_x_g < -0.4f) {
+//		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_RESET);
+//		  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_SET);   // Enciende LED Rojo
+//	  } else {
+//		  HAL_GPIO_WritePin(GPIOD, LD4_Pin | LD5_Pin, GPIO_PIN_RESET);
+//	  }
+//
+//	  // Eje Y: Inclinación Frontal (Adelante / Atrás)
+//	  if (accel_y_g > 0.4f) {
+//		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_SET);   // Enciende LED Naranja
+//		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_RESET);
+//	  } else if (accel_y_g < -0.4f) {
+//		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_RESET);
+//		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_SET);   // Enciende LED Azul
+//	  } else {
+//		  HAL_GPIO_WritePin(GPIOD, LD3_Pin | LD6_Pin, GPIO_PIN_RESET);
+//	  }
 
 
 	  // problema de parpadeo de led azul
 
-	  HAL_GPIO_TogglePin(GPIOD, LD6_Pin);
-	  HAL_Delay(500);
+//	  HAL_GPIO_TogglePin(GPIOD, LD6_Pin);
+//	  HAL_Delay(500);
 
 	  // parpadeo no bloqueante
 
@@ -215,6 +220,76 @@ int main(void)
 //		 HAL_GPIO_TogglePin(GPIOD, LD6_Pin);
 //		 previousTime_LED = currentTime;
 //	}
+
+	  //------------------------ desafio 4 ----------------------------------
+
+
+	  	  LSM303_Read_Accel(&acelerometro);
+
+	  	  // 2. Conversión a Fuerzas G reales
+	  	  accel_x_g = (float)(acelerometro.accel_x_raw >> 4) * 0.001f;
+	  	  accel_y_g = (float)(acelerometro.accel_y_raw >> 4) * 0.001f;
+	  	  accel_z_g = (float)(acelerometro.accel_z_raw >> 4) * 0.001f;
+
+	  	  // 3. Control de LEDs por Inclinación (Umbral de ±0.4g)
+	  	  // Eje X: Inclinación Lateral (Izquierda / Derecha)
+	  	  if (accel_x_g > 0.4f) {
+	  		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_SET);   // Enciende LED Verde
+	  	  } else {
+	  		  HAL_GPIO_WritePin(GPIOD, LD4_Pin, GPIO_PIN_RESET);
+	  	  }
+
+	  	  if (alarm_active == 0){
+
+			  if (accel_x_g < -0.4f) {
+				  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_SET);
+			  } else {
+				  HAL_GPIO_WritePin(GPIOD, LD5_Pin, GPIO_PIN_RESET);
+			  }
+	  	  }
+
+	  	  // Eje Y: Inclinación Frontal (Adelante / Atrás)
+	  	  if (accel_y_g > 0.4f) {
+	  		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_SET);   // Enciende LED Naranja
+	  		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_RESET);
+	  	  } else if (accel_y_g < -0.4f) {
+	  		  HAL_GPIO_WritePin(GPIOD, LD3_Pin, GPIO_PIN_RESET);
+	  		  HAL_GPIO_WritePin(GPIOD, LD6_Pin, GPIO_PIN_SET);   // Enciende LED Azul
+	  	  } else {
+	  		  HAL_GPIO_WritePin(GPIOD, LD3_Pin | LD6_Pin, GPIO_PIN_RESET);
+	  	  }
+
+	  	  if (hcsr04_is_data_ready(&sensor)) {
+	  		  distance = hcsr04_get_distance_cm(&sensor);
+
+	  		  if(distance < 15.0f){
+	  			  alarm_active = 1;
+	  		  } else {
+	  			  alarm_active = 0;
+	  		  }
+	  	  }
+
+	  	  if (currentTime - last_time_hcsr04 >= 100){
+	  		  hcsr04_start_measurement(&sensor);
+	  		  last_time_hcsr04 = currentTime;
+	  	  }
+
+	  	  if (currentTime - last_time_lm35 >= 100){
+	  		  if (LM35_Get_Temperature(&sens_temp_NB, &temp_NB)){
+	  			  LM35_Start_Conversion(&sens_temp_NB);
+	  		  }
+	  		  last_time_lm35 = currentTime;
+	  	  }
+
+	  	  if (alarm_active == 1){
+	  		  if (currentTime - last_time_alarm >= 100){
+	  			  HAL_GPIO_TogglePin(GPIOD, LD5_Pin);
+	  			  last_time_alarm = currentTime;
+	  		  }
+	  	  }
+
+
+
   }
   /* USER CODE END 3 */
 }
